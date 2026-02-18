@@ -1,0 +1,266 @@
+/* ========================================
+   FURRYMART - ADDITIONAL MOBILE RESPONSIVE FIXES
+   Maintains SAME design as desktop, just scaled
+   ======================================== */
+
+/* Minimal changes - keep desktop layout */
+@media (max-width: 768px) {
+    /* Product Cards - Full Responsive */
+    .product-showcase-card,
+    .product-card {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    /* Product image responsive */
+    .product-img-box,
+    .product-image {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Brand logos */
+    .brand-tag-small,
+    .brand-tag {
+        font-size: 10px !important;
+        margin-bottom: 5px !important;
+    }
+    
+    /* Product name text */
+    .product-name-showcase,
+    .product-name {
+        font-size: 13px !important;
+        line-height: 1.3 !important;
+        -webkit-line-clamp: 2 !important;
+    }
+    
+    /* Price display */
+    .price-row {
+        flex-wrap: wrap !important;
+        gap: 6px !important;
+    }
+    
+    .price-main {
+        font-size: 18px !important;
+    }
+    
+    .price-old {
+        font-size: 12px !important;
+    }
+    
+    .discount-tag {
+        font-size: 9px !important;
+        padding: 2px 6px !important;
+    }
+    
+    /* Weight display */
+    .weight-display {
+        font-size: 9px !important;
+        padding: 3px 8px !important;
+    }
+    
+    /* Wishlist button */
+    .wishlist-btn-card {
+        width: 36px !important;
+        height: 36px !important;
+        top: 8px !important;
+        left: 8px !important;
+    }
+    
+    .wishlist-btn-card i {
+        font-size: 14px !important;
+    }
+    
+    /* NEW/BEST badges */
+    .new-badge,
+    .best-badge {
+        font-size: 9px !important;
+        padding: 3px 10px !important;
+        top: 8px !important;
+        right: 8px !important;
+    }
+    
+    /* Diet marks */
+    .diet-mark {
+        width: 14px !important;
+        height: 14px !important;
+        top: 8px !important;
+        left: 8px !important;
+    }
+    
+    .diet-mark::after {
+        width: 8px !important;
+        height: 8px !important;
+    }
+    
+    /* Button actions on cards */
+    .btn-actions {
+        margin-top: 10px !important;
+    }
+    
+    .btn-quick-view,
+    .btn-add-cart {
+        padding: 10px !important;
+        font-size: 11px !important;
+        border-radius: 10px !important;
+    }
+    
+    /* Sold out badge */
+    .sold-out-badge {
+        font-size: 11px !important;
+        padding: 6px 12px !important;
+    }
+    
+    /* Hero sliding section */
+    .slide-bg {
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    
+    /* Ensure swiper works properly */
+    .swiper,
+    .swiper-wrapper,
+    .swiper-slide {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    
+    /* Swiper navigation buttons */
+    .swiper-button-next,
+    .swiper-button-prev,
+    .breed-nav-btn {
+        width: 35px !important;
+        height: 35px !important;
+        margin-top: -17px !important;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        font-size: 14px !important;
+    }
+    
+    /* Swiper pagination */
+    .swiper-pagination {
+        bottom: 15px !important;
+    }
+    
+    .swiper-pagination-bullet {
+        width: 8px !important;
+        height: 8px !important;
+        margin: 0 4px !important;
+    }
+    
+    .swiper-pagination-bullet-active {
+        width: 24px !important;
+        border-radius: 5px !important;
+    }
+    
+    /* Search suggestions dropdown */
+    .search-suggestions {
+        left: 0 !important;
+        right: 0 !important;
+        max-height: 300px !important;
+        margin-top: 5px !important;
+    }
+    
+    .suggestion-item {
+        padding: 10px !important;
+    }
+    
+    .suggestion-img {
+        width: 45px !important;
+        height: 45px !important;
+    }
+    
+    .suggestion-name {
+        font-size: 13px !important;
+    }
+    
+    .suggestion-brand {
+        font-size: 10px !important;
+    }
+    
+    .suggestion-price {
+        font-size: 13px !important;
+    }
+    
+    /* Footer responsive */
+    footer {
+        padding: 30px 3% !important;
+    }
+    
+    footer .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px !important;
+    }
+    
+    /* Forms - keep 16px to prevent iOS zoom */
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="number"],
+    textarea,
+    select {
+        font-size: 16px !important;
+    }
+    
+    /* Modal on mobile */
+    .modal,
+    .quick-modal,
+    .success-modal {
+        padding: 15px !important;
+    }
+    
+    .modal-content,
+    .modal-content-quick {
+        width: 95% !important;
+        max-width: 95% !important;
+        max-height: 85vh !important;
+        padding: 20px 15px !important;
+        border-radius: 20px !important;
+    }
+    
+    /* Grid layouts */
+    .grid,
+    [class*="-grid"] {
+        gap: 15px !important;
+    }
+    
+    /* Flex layouts */
+    .flex,
+    [class*="-flex"] {
+        flex-wrap: wrap !important;
+    }
+}
+
+/* Small mobile phones */
+@media (max-width: 480px) {
+    /* Extra small text adjustments */
+    h1 { font-size: 24px !important; }
+    h2 { font-size: 20px !important; }
+    h3 { font-size: 18px !important; }
+    h4 { font-size: 16px !important; }
+    h5 { font-size: 14px !important; }
+    h6 { font-size: 13px !important; }
+    
+    p, span, div {
+        font-size: 14px !important;
+    }- keep same, just tighter gaps */
+    .grid,
+    [class*="-grid"] {
+        gap: 10px !important;
+    }
+}
+
+/* Small mobile phones - scale down fonts only */
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem !important; }
+    h2 { font-size: 1.5rem !important; }
+    h3 { font-size: 1.3rem !important; }
+    h4 { font-size: 1.1rem !important; .hide-on-mobile {
+        display: none !important;
+    }
+}
